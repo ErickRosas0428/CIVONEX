@@ -1,0 +1,44 @@
+/* ================= HEADER ================= */
+
+header{
+    background:#ffffff;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:50px;
+}
+
+.brand-text h1{
+    font-weight:800;
+    letter-spacing:3px;
+    color:var(--azul);
+}
+
+.brand-text span{
+    font-size:12px;
+    letter-spacing:2px;
+    color:#666;
+}
+
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:600;
+    color:var(--azul);
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--verde);
+}

@@ -1,0 +1,24 @@
+:root{
+    --azul:#123A63;
+    --azul-oscuro:#0c2742;
+    --verde:#1FA34A;
+    --gris-claro:#f4f6f9;
+}
+
+/* RESET GENERAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+html, body{
+    overflow-x:hidden;
+}
+
+body{
+    background:var(--gris-claro);
+    color:#333;
+    line-height:1.6;
+}

@@ -1,0 +1,163 @@
+
+/* =========================
+   BASE (MÓVIL FIRST)
+========================= */
+
+.services,
+.projects,
+.why-grid,
+.empresarial-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.propuesta-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+header{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    margin-left:15px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.flujo-mapa{
+    display:flex;
+    flex-direction:column;
+}
+
+.flecha{
+    transform:rotate(90deg);
+    margin:10px 0;
+}
+
+
+/* =========================
+   TABLET (≥ 768px)
+========================= */
+
+@media (min-width: 768px){
+
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    nav{
+        margin-top:0;
+    }
+
+    .hero h2{
+        font-size:36px;
+    }
+
+    .services,
+    .projects,
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .empresarial-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* ✅ AQUÍ VA LA MEJORA QUE FALTABA */
+    .propuesta-container{
+        grid-template-columns:1.5fr 1fr;
+    }
+
+    .flujo-mapa{
+        flex-direction:row;
+    }
+
+    .flecha{
+        transform:rotate(0deg);
+        margin:0 10px;
+    }
+}
+
+
+/* =========================
+   DESKTOP (≥ 992px)
+========================= */
+
+@media (min-width: 992px){
+
+    .services{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .projects{
+        grid-template-columns:repeat(5,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .empresarial-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* ✅ DESKTOP MEJOR DISTRIBUCIÓN */
+    .propuesta-container{
+        grid-template-columns:1.2fr 1fr;
+    }
+
+    .hero h2{
+        font-size:42px;
+    }
+}
+
+/* =========================
+   FIX MODAL EN MÓVIL
+========================= */
+
+@media (max-width:480px){
+
+    .nav{
+        font-size:28px;
+        padding:8px 10px;
+    }
+
+    .prev{
+        left:5px; /* 👈 evita que se salga */
+    }
+
+    .next{
+        right:5px;
+    }
+
+    .modal-img{
+        max-width:95%;
+        max-height:75%;
+    }
+
+    .thumbnails{
+        max-width:95%;
+    }
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
